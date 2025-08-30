@@ -12,7 +12,7 @@ const Navigation = () => {
     { name: "For Owners", href: "#for-owners" },
     { name: "For Investors", href: "#for-investors" },
     { name: "Pricing", href: "#pricing" },
-    { name: "Dashboard", href: "#dashboard" }
+    { name: "Dashboard", href: "/dashboard" }
   ];
 
   return (

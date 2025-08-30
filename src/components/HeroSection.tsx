@@ -31,9 +31,11 @@ const HeroSection = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 animate-scale-in">
-            <Button size="lg" variant="hero" className="group">
-              Sign In to Dashboard
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+            <Button asChild size="lg" variant="hero" className="group">
+              <a href="/dashboard">
+                Sign In to Dashboard
+                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </a>
             </Button>
             <Button size="lg" variant="secondary-outline" className="group">
               <Play className="mr-2 h-5 w-5" />

@@ -28,9 +28,11 @@ const ClosingSection = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16 animate-scale-in">
-            <Button size="lg" variant="secondary" className="group text-lg px-8 py-4">
-              Sign In to Dashboard
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+            <Button asChild size="lg" variant="secondary" className="group text-lg px-8 py-4">
+              <a href="/dashboard">
+                Sign In to Dashboard
+                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </a>
             </Button>
             <Button 
               size="lg" 
