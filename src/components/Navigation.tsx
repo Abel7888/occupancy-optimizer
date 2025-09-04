@@ -10,8 +10,7 @@ const Navigation = () => {
     { name: "How It Works", href: "#how-it-works" },
     { name: "Features", href: "#features" },
     { name: "For Owners", href: "#for-owners" },
-    { name: "For Investors", href: "#for-investors" },
-    { name: "Dashboard", href: "/dashboard" }
+    { name: "For Investors", href: "#for-investors" }
   ];
 
   return (
@@ -42,12 +41,11 @@ const Navigation = () => {
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="ghost" size="sm">
-              Sign In
-            </Button>
-            <Button variant="hero" size="sm">
-              Request Demo
-            </Button>
+            <a href="/dashboard">
+              <Button variant="hero" size="sm">
+                View Dashboard
+              </Button>
+            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -76,13 +74,12 @@ const Navigation = () => {
                   {item.name}
                 </a>
               ))}
-              <div className="pt-4 border-t border-border space-y-2">
-                <Button variant="ghost" className="w-full">
-                  Sign In
-                </Button>
-                <Button variant="hero" className="w-full">
-                  Request Demo
-                </Button>
+              <div className="pt-4 border-t border-border">
+                <a href="/dashboard" className="block">
+                  <Button variant="hero" className="w-full">
+                    View Dashboard
+                  </Button>
+                </a>
               </div>
             </div>
           </div>
